@@ -7,12 +7,18 @@ let package = Package(
     name: "ZNSTextAttachment",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: "ZNSTextAttachment", targets: ["ZNSTextAttachment"]),
+        .library(
+            name: "ZNSTextAttachment",
+            targets: ["ZNSTextAttachment"]
+        ),
     ],
-    dependencies: [
-    ],
+    dependencies: [],
     targets: [
-        .target(name: "ZNSTextAttachment",
-                path: "Sources"),
+        .target(
+            name: "ZNSTextAttachment",
+            dependencies: [],
+            path: "Sources",
+            publicHeadersPath: nil
+        ),
     ]
 )

@@ -127,8 +127,8 @@ public class ZNSTextAttachment: NSTextAttachment {
     }
 }
 
-extension ZNSTextAttachment {
-    public override func image(forBounds imageBounds: CGRect, textContainer: NSTextContainer?, characterIndex charIndex: Int) -> UIImage? {
+public extension ZNSTextAttachment {
+    override func image(forBounds imageBounds: CGRect, textContainer: NSTextContainer?, characterIndex charIndex: Int) -> UIImage? {
 
         if let textStorage = textContainer?.layoutManager?.textStorage {
             register(textStorage)
