@@ -24,7 +24,7 @@ public class ZResizableNSTextAttachment: NSTextAttachment {
         super.init(data: data, ofType: type)
     }
     
-    public required init?(coder: NSCoder) {
+    @objc required dynamic public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -52,5 +52,9 @@ public class ZResizableNSTextAttachment: NSTextAttachment {
             
             return CGRect(origin: .zero, size:CGSize(width: Int(imageWidth * factor), height: Int(imageHeight * factor)))
         }
+    }
+    
+    @objc deinit {
+        print("ZResizableNSTextAttachment deinit")
     }
 }
