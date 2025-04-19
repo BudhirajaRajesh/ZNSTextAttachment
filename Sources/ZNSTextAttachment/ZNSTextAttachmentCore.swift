@@ -10,7 +10,7 @@ import MobileCoreServices
 
 import UniformTypeIdentifiers
 
-public class ZNSTextAttachment: NSTextAttachment {
+public class ZNSTextAttachmentCore: NSTextAttachment {
 
     public let imageURL: URL
     public weak var delegate: ZNSTextAttachmentDelegate?
@@ -127,7 +127,7 @@ public class ZNSTextAttachment: NSTextAttachment {
     }
 }
 
-public extension ZNSTextAttachment {
+public extension ZNSTextAttachmentCore {
     override func image(forBounds imageBounds: CGRect, textContainer: NSTextContainer?, characterIndex charIndex: Int) -> UIImage? {
 
         if let textStorage = textContainer?.layoutManager?.textStorage {
