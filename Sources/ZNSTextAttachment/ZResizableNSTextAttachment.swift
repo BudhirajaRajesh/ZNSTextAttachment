@@ -9,11 +9,12 @@ import Foundation
 
 import UIKit
 
-@objc public class ZResizableNSTextAttachment: NSTextAttachment {
+@objc @_hasMissingDesignatedInitializers
+public class ZResizableNSTextAttachment: NSTextAttachment {
     
-    public let imageSize: CGSize?
-    public let fixedWidth: CGFloat?
-    public let fixedHeight: CGFloat?
+    public final let imageSize: CGSize?
+    public final let fixedWidth: CGFloat?
+    public final let fixedHeight: CGFloat?
     
     public init(imageSize: CGSize?, fixedWidth: CGFloat?, fixedHeight: CGFloat?, data: Data, type: String) {
         self.imageSize = imageSize
@@ -27,7 +28,7 @@ import UIKit
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func attachmentBounds(for textContainer: NSTextContainer?, proposedLineFragment lineFrag: CGRect, glyphPosition position: CGPoint, characterIndex charIndex: Int) -> CGRect {
+    @objc override dynamic public func attachmentBounds(for textContainer: NSTextContainer?, proposedLineFragment lineFrag: CGRect, glyphPosition position: CGPoint, characterIndex charIndex: Int) -> CGRect {
         
         if let fixedWidth = self.fixedWidth,
            let fixedHeight = self.fixedHeight {
