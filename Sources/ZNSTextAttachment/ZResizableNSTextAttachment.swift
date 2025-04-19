@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-public class ZResizableNSTextAttachment: NSTextAttachment {
+@objc public class ZResizableNSTextAttachment: NSTextAttachment {
     
     public let imageSize: CGSize?
     public let fixedWidth: CGFloat?
@@ -23,7 +23,7 @@ public class ZResizableNSTextAttachment: NSTextAttachment {
         super.init(data: data, ofType: type)
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
