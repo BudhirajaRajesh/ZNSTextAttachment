@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-@objc @_hasMissingDesignatedInitializers
+@objc
 public class ZResizableNSTextAttachment: NSTextAttachment {
     
     public final let imageSize: CGSize?
