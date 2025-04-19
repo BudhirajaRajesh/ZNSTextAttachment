@@ -6,7 +6,6 @@
 //
 
 import Foundation
-#if canImport(UIKit)
 import UIKit
 
 public class ZNSTextAttachmentLabel: UILabel {
@@ -22,4 +21,3 @@ public class ZNSTextAttachmentLabel: UILabel {
         }
     }
 }
-#endif

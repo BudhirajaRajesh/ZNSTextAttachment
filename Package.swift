@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ZNSTextAttachment",
-    platforms: [.iOS(.v12), .macOS(.v10_14)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(name: "ZNSTextAttachment", targets: ["ZNSTextAttachment"]),
     ],

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-#if canImport(UIKit)
 import UIKit
 
 extension UILabel: ZNSTextAttachmentable {
@@ -26,4 +25,3 @@ extension UILabel: ZNSTextAttachmentable {
         self.attributedText = mutableAttributedString
     }
 }
-#endif

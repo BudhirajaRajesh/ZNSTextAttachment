@@ -6,12 +6,8 @@
 //
 
 import Foundation
-#if canImport(UIKit)
 import UIKit
 import MobileCoreServices
-#elseif canImport(AppKit)
-import AppKit
-#endif
 
 extension NSTextStorage: ZNSTextAttachmentable {
     public func replace(attachment: ZNSTextAttachment, to: ZResizableNSTextAttachment) {
