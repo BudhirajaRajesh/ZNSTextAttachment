@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZNSTextAttachment'
-  s.version          = '1.1.9'
+  s.version          = '2.0.1'
   s.summary          = 'ZNSTextAttachment enables NSTextAttachment to download images from remote URLs, supporting both UITextView and UILabel.'
   s.description      = <<-DESC
     ZNSTextAttachment enables NSTextAttachment to download images from remote URLs, supporting both UITextView and UILabel. Part of ZMarkupParser. Pure-Swift library for HTML to NSAttributedString conversion with custom style and tags.
